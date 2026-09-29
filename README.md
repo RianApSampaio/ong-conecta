@@ -23,7 +23,7 @@ Como o projeto usa módulos ES (`type="module"`), ele **não funciona abrindo o 
 2. Inicie um servidor na pasta do projeto, usando uma das opções:
    - **VS Code:** extensão *Live Server* → clique em "Go Live"
    - **Python:** `python -m http.server 8000` e acesse `http://localhost:8000`
-3. Ou acesse a versão publicada: `https://github.com/RianApSampaio/Projeto-SPA`
+3. Ou acesse a versão publicada: `https://github.com/RianApSampaio/ong-conecta`
 
 ---
 
