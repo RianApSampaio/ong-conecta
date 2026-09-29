@@ -1,0 +1,80 @@
+:root {
+  --cor-primaria: #2563eb;
+  --cor-sucesso: #16a34a;
+  --cor-erro: #dc2626;
+  --texto-escuro: #1f2937;
+  --fundo: #f9fafb;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--texto-escuro);
+  background-color: var(--fundo);
+  line-height: 1.6;
+}
+
+main {
+  min-height: 70vh;
+}
+
+/* O foco é movido para o <main> ao trocar de página; sem anel visual nesse caso */
+main:focus {
+  outline: none;
+}
+
+.cartao {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.cartao:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cartao {
+    transition: none;
+  }
+
+  .cartao:hover {
+    transform: none;
+  }
+}
+
+.invalido {
+  border-color: var(--cor-erro) !important;
+  background-color: #fef2f2 !important;
+}
+
+.mensagem-erro {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.mensagem {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.mensagem.sucesso {
+  background-color: #dcfce7;
+  color: #166534;
+  border-left: 4px solid var(--cor-sucesso);
+}
+
+.mensagem.erro {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid var(--cor-erro);
+}
+
+/* Acessibilidade: anel de foco visível para navegação por teclado */
+:focus-visible {
+  outline: 3px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
