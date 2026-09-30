@@ -49,12 +49,19 @@ Como o projeto usa módulos ES (`type="module"`), ele **não funciona abrindo o 
 ├── .gitignore
 ├── css/
 │   └── estilos.css
+├── img/                   # logo, favicon e fotos (WebP otimizado)
 └── js/
     ├── main.js            # ponto de entrada; liga formulário e páginas
     ├── navegacao.js       # rotas por hash e renderização das páginas
     ├── validacao.js       # regras de validação e exibição de erros
     ├── armazenamento.js   # leitura e escrita no localStorage
     └── templates.js       # renderização da lista de parceiros
+
+---
+
+## 🖼️ Créditos das imagens
+
+As imagens do projeto (logo, ilustração e fotos) foram geradas com inteligência artificial (Dola AI).
 
 ---
 
