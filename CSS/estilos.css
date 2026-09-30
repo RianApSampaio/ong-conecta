@@ -78,3 +78,19 @@ main:focus {
   outline: 3px solid var(--cor-primaria);
   outline-offset: 2px;
 }
+
+/* Imagens */
+.logo-navbar {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 3px;
+  object-fit: contain;
+}
+
+.banner-rede {
+  display: block;
+  width: 100%;
+  height: clamp(120px, 20vw, 220px);
+  object-fit: cover;
+  object-position: center 45%;
+}
