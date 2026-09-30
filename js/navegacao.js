@@ -8,8 +8,13 @@ const rotas = {
           <p class="lead mb-4">Uma plataforma simples e acessível para organizações do terceiro setor gerenciarem seus parceiros e cadastros.</p>
           <a href="#/cadastro" class="btn btn-primary btn-lg">Quero participar</a>
         </div>
-        <div class="col-md-6 text-center">
-          <p class="fs-5">Juntos somos mais fortes!</p>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <figure class="mb-0">
+            <img src="img/equipe-voluntarios.webp" width="1200" height="674"
+                 class="img-fluid rounded-4 shadow"
+                 alt="Voluntários de várias idades sorrindo enquanto organizam caixas de alimentos, livros e plantas em uma sala clara de centro comunitário">
+            <figcaption class="fs-5 mt-3">Juntos somos mais fortes!</figcaption>
+          </figure>
         </div>
       </div>
     `
@@ -17,7 +22,7 @@ const rotas = {
   '/cadastro': {
     titulo: 'Cadastro de Parceiro — ONG Conecta',
     render: () => `
-      <div class="row justify-content-center">
+      <div class="row justify-content-center align-items-center g-5">
         <div class="col-md-8 col-lg-6">
           <h1 class="mb-4">Cadastro de Parceiro</h1>
           <p class="text-muted mb-4">Preencha os dados abaixo para fazer parte da nossa rede. Campos com <span class="text-danger" aria-hidden="true">*</span> são obrigatórios.</p>
@@ -45,6 +50,12 @@ const rotas = {
 
           <div id="area-mensagem" class="mt-4" aria-live="polite"></div>
         </div>
+
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="img/doacoes-comunidade.webp" width="1200" height="674" loading="lazy"
+               class="img-fluid rounded-4 shadow"
+               alt="Voluntários com coletes coloridos separando alimentos enlatados, cobertores e roupas em caixas de doação, com uma van de entregas ao fundo">
+        </div>
       </div>
     `
   },
@@ -52,6 +63,9 @@ const rotas = {
     titulo: 'Parceiros Cadastrados — ONG Conecta',
     render: () => `
       <div>
+        <img src="img/rede-parceiros.webp" width="1600" height="899"
+             class="banner-rede rounded-4 mb-4"
+             alt="Ilustração colorida de pessoas representadas por ícones em círculos, ligadas por linhas luminosas que formam uma rede">
         <h1 class="mb-4">Parceiros da Rede</h1>
         <p class="text-muted mb-4">Pessoas e organizações que fazem parte desta causa.</p>
         <div id="area-lista"></div>
